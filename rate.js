@@ -29,7 +29,7 @@ var imgL = document.getElementById('imgL')
 
 
 
-var items = [
+var images = [
   //rachels
 "uploads/R1.jpg",
 "uploads/R2.jpg",
@@ -105,18 +105,31 @@ var items = [
 
 
 ];
+function preloadImages(srcs, imgs, callback) {
+    var img;
+    var remaining = srcs.length;
+    for (var i = 0; i < srcs.length; i++) {
+        img = new Image();
+        img.onload = function() {
+            --remaining;
+            if (remaining <= 0) {
+                callback();
+            }
+        };
+        img.src = srcs[i];
+        imgs.push(img);
+    }
+}
+
+// then to call it, you would use this
+var imageSrcs = ["src1", "src2", "src3", "src4"];
+var items = [];
+
+preloadImages(imageSrcs, itemss, myFunction);
 
 
 
 
-var socials = [
-//rachels
-
-
-
-//s
-
-]
 
  
 //shuffle array of pics
