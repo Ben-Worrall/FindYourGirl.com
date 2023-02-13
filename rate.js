@@ -79,12 +79,9 @@ var items = [
 
 
 
-//preload all images to the cache
 
 
-$(items).each(function() {
-var image = $('<img />').attr('src', this);
-});
+
 
 
 
