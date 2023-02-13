@@ -90,9 +90,7 @@ function preloadImages(array) {
         img.onload = function() {
             var index = list.indexOf(this);
             if (index !== -1) {
-                // remove image from the array once it's loaded
-                // for memory consumption reasons
-                list.splice(index, 1);
+                
             }
         }
         list.push(img);
