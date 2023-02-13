@@ -1,3 +1,33 @@
+//at the end after choosing last button
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("restart")[0];
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  location.reload()
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  
+
+
+var Ftext = document.getElementById("DoneText")
+var finished = document.getElementById("finished")
+var num = document.getElementById("num")
+var right = document.getElementById("right");
+var left = document.getElementById("left");
+var imgR = document.getElementById('imgR')
+var imgL = document.getElementById('imgL')
+
+
 
 var items = [
   //rachels
@@ -79,53 +109,14 @@ var items = [
 
 
 
+var socials = [
+//rachels
 
 
 
+//s
 
-
-
-
-
-
-
-//at the end after choosing last button
-var modal = document.getElementById("myModal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("restart")[0];
-
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  location.reload()
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-  
-
-
-var Ftext = document.getElementById("DoneText")
-var finished = document.getElementById("finished")
-var num = document.getElementById("num")
-var right = document.getElementById("right");
-var left = document.getElementById("left");
-var imgR = document.getElementById('imgR')
-var imgL = document.getElementById('imgL')
-
-
-
-
-
-
-
-
-
+]
 
  
 //shuffle array of pics
@@ -288,20 +279,3 @@ function BNTclickR() {
 
     document.getElementById("left").addEventListener("click", BNTclickL);
     document.getElementById("right").addEventListener("click", BNTclickR);
-
-   
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
