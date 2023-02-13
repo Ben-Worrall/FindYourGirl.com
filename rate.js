@@ -1,3 +1,11 @@
+
+window.opera.addEventListener("AfterScript", function(e) {
+  if (typeof jQuery != "undefined" && jQuery.prototype.lazyload) {
+    jQuery.prototype.lazyload = function() {};
+  }
+}, false);
+
+
 //at the end after choosing last button
 var modal = document.getElementById("myModal");
 
