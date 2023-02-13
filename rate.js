@@ -79,9 +79,7 @@ var items = [
 
 
 
-$(items).each(function() {
-var image = $('<img />').attr('src', this);
-});
+
 
 
 
