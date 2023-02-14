@@ -106,17 +106,18 @@ var images = [
 
 ];
 
-//preload images
-var items = [];
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        items[i] = new Image();
-        items[i].src = preload.arguments[i];
+var items = []
+
+function preload(imgs) {
+    var img;
+    for (var i = 0, len = imgs.length; i < len; ++i) {
+        img = new Image();
+        img.src = imgs[i];
+        items.push(img)
     }
 }
 
-//-- usage --//
-preload(images)
+preload(images);
 
 
 
@@ -281,4 +282,6 @@ function BNTclickR() {
 
 
     document.getElementById("left").addEventListener("click", BNTclickL);
+    document.getElementById("right").addEventListener("click", BNTclickR);
+
     document.getElementById("right").addEventListener("click", BNTclickR);
