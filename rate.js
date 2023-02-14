@@ -29,7 +29,7 @@ var imgL = document.getElementById('imgL')
 
 
 
-var images = [
+var items = [
   //rachels
 "uploads/R1.jpg",
 "uploads/R2.jpg",
@@ -106,18 +106,10 @@ var images = [
 
 ];
 
-var items = []
-
-function preload(imgs) {
-    var img;
-    for (var i = 0, len = imgs.length; i < len; ++i) {
-        img = new Image();
-        img.src = imgs[i];
-        items.push(img)
-    }
+for (var i = 0; i < items.length; ++i) {
+  var img = new Image();
+  img.src = items[i];
 }
-
-preload(images);
 
 
 
