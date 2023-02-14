@@ -1,3 +1,10 @@
+//play audio
+window.onload = function(){
+  document.getElementbyId("myaudio").play()
+}
+
+
+
 //at the end after choosing last button
 var modal = document.getElementById("myModal");
 
