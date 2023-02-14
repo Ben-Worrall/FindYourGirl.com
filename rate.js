@@ -29,7 +29,7 @@ var imgL = document.getElementById('imgL')
 
 
 
-var images = [
+var items = [
   //rachels
 "uploads/R1.jpg",
 "uploads/R2.jpg",
@@ -109,7 +109,14 @@ var images = [
 
 
 
+var socials = [
+//rachels
 
+
+
+//s
+
+]
 
  
 //shuffle array of pics
