@@ -1,7 +1,4 @@
-//play audio
-window.onload = function(){
-  document.getElementbyId("myaudio").play()
-}
+
 
 
 
