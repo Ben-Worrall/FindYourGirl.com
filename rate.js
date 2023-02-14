@@ -29,7 +29,7 @@ var imgL = document.getElementById('imgL')
 
 
 
-var items = [
+var images = [
   //rachels
 "uploads/R1.jpg",
 "uploads/R2.jpg",
@@ -106,17 +106,20 @@ var items = [
 
 ];
 
+//preload images
+var items = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        items[i] = new Image();
+        items[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(images)
 
 
 
-var socials = [
-//rachels
-
-
-
-//s
-
-]
 
  
 //shuffle array of pics
