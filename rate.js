@@ -163,7 +163,7 @@ function leftclick(){
   if(items.length>0)
   {
     imgL.src = items.pop();
-    num.innerHTML= "Pictures left: "  + items.length
+   // num.innerHTML= "Pictures left: "  + items.length
   } else {
 
     done(imgR.src)
@@ -175,7 +175,7 @@ function rightclick(){
   if(items.length>0)
   {
     imgR.src = items.pop();
-    num.innerHTML= "Pictures left: "  + items.length
+   // num.innerHTML= "Pictures left: "  + items.length
   } else{
     
    done(imgL.src)
