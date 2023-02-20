@@ -105,7 +105,8 @@ var items = [
 //guest celeb
 "uploads/de946f1b-8590-41a3-88cf-3e65cb667fc4.png",
 "uploads/eminem's daughter.jpg",
-"uploads/peterson's daughter.jpg"
+"uploads/peterson's daughter.jpg",
+  "uploads/EGB_R7IXYAI_Ryl.jpg"
 
 
 ];
